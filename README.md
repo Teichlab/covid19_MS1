@@ -1,4 +1,4 @@
-Analysis notebooks for "Single-cell Transcriptomics Data Survey Reveals SARS-CoV-2 Entry Factors Highly Expressed in Nasal Epithelial Cells Together with Innate Immune Genes".
+Analysis notebooks for "[SARS-CoV-2 entry factors are highly expressed in nasal epithelial cells together with innate immune genes](https://www.nature.com/articles/s41591-020-0868-6)".
 
 For each dataset where per-cell annotation is not available, we re-processed the data from raw or normalised (whichever was deposited alongside the original publication) quantification matrix. The standard [scanpy](https://github.com/theislab/scanpy/tree/1.4.3) and clustering procedure was followed. When batch information is available, [harmony](https://github.com/immunogenomics/harmony) was used to correct batch effects in the PC space and the corrected PCs were used for computing nearest neighbour graph. To re-annotate the cells, multiple clusterings of different resolutions were generated among which the one best matching the published clustering was picked and manual annotation was undertaken using marker genes described in the original publication.
 
